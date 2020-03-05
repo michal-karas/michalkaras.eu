@@ -1,0 +1,59 @@
+.myexp {
+    padding: 75px 0;
+    background-color: #ffffff;
+
+
+    .container {
+
+        h2 {
+            text-align: center;
+            color: $text-color;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 0.8;
+            @include fluid-type (320px, 1170px, 20px, 40px);
+        }
+
+        .box {
+            display: flex;
+            width: 100%;
+            justify-content: center;
+
+            @media (max-width: 750px) {
+                width: 100%;
+                text-align: center;
+                margin: 0 0 20px 0;
+            }
+
+            .time {
+                padding: 75px 0 0 0;
+                display: block;
+                top: 0;
+                left: 0;
+                color: $text-color;
+                text-align: justify;
+                line-height: 1.5;
+                font-size: 20px;
+                text-transform: capitalize;
+                font-weight: 700;
+                @include fluid-type (320px, 1170px, 12px, 20px);
+
+            }
+
+            .data {
+                padding: 75px 0 75px 40px;
+                display: block;
+                top: 0;
+                left: 0;
+                color: $text-color;
+                text-align: justify;
+                line-height: 1.5;
+                font-size: 20px;
+                text-transform: capitalize;
+                @include fluid-type (320px, 1170px, 12px, 20px);
+
+            }
+        }
+    }
+}

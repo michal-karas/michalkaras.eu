@@ -1,0 +1,88 @@
+.top {
+    padding: 10px 0 0 0;
+
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+
+        .left {
+            align-self: center;
+
+            p {
+                font-size: 16px;
+                font-weight: 700;
+                color: $text-color-second;
+                line-height: 0.8;
+                text-transform: uppercase;
+                @include fluid-type (320px, 1170px, 10px, 16px);
+
+            }
+
+            p:last-of-type {
+                margin: 16px 0 60px 0;
+                @include fluid-type (320px, 1170px, 10px, 16px);
+            }
+
+            @media (max-width: 750px) {
+                width: 100%;
+                text-align: center;
+                margin: 0 0 20px 0;
+
+            }
+
+            h2 {
+
+                margin: 0;
+                color: $text-color;
+                font-size: 40px;
+                font-weight: 700;
+                text-transform: uppercase;
+                line-height: 0.8;
+                @include fluid-type (320px, 1170px, 20px, 40px);
+
+            }
+
+            .button {
+                background-color: $button-color;
+                color: $primary-color;
+                font-size: 14px;
+                font-weight: 700;
+                text-transform: uppercase;
+                padding: 10px 30px 13px 30px;
+                border-radius: 5px;
+                transition: 0.4s all;
+
+                &:hover {
+                    background-color: $button-hover-color;
+
+                }
+
+                .left {
+                    width: 45%;
+                }
+            }
+        }
+
+
+        .right {
+            text-align: right;
+            width: 45%;
+            padding: 100px 50px 0 0;
+
+
+            @media (max-width: 750px) {
+                width: 100%;
+
+            }
+
+            img {
+
+                width: 65%;
+            }
+
+
+        }
+    }
+}

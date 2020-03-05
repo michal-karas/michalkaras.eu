@@ -1,0 +1,123 @@
+.my-skills {
+    padding: 75px 0;
+    background-color: $primary-color;
+
+    .container {
+
+        h2 {
+            text-align: center;
+            color: $text-color;
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 0.8;
+            @include fluid-type (320px, 1170px, 20px, 40px);
+        }
+
+        h3 {
+
+            text-align: left;
+            color: $text-color;
+            font-size: 20px;
+            font-weight: 700;
+            text-transform: uppercase;
+            line-height: 0.8;
+            @include fluid-type (320px, 1170px, 20px, 20px);
+        }
+
+        p {
+            text-align: center;
+            color: $text-color;
+            font-size: 30px;
+            font-weight: 700;
+        }
+
+        .row {
+            padding: 75px 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+
+
+
+            #html {
+                margin: 20px 20px 50px 20px;
+                width: 220px;
+                height: 8px;
+                position: relative;
+
+
+            }
+
+            #css {
+                margin: 20px 20px 50px 20px;
+                width: 220px;
+                height: 8px;
+                position: relative;
+
+            }
+
+            #js {
+                margin: 20px 20px 50px 20px;
+                width: 220px;
+                height: 8px;
+                position: relative;
+            }
+
+            #git {
+                margin: 20px 20px 50px 20px;
+                width: 220px;
+                height: 8px;
+                position: relative;
+            }
+
+            #python {
+                margin: 20px 20px 50px 20px;
+                width: 220px;
+                height: 8px;
+                position: relative;
+            }
+
+            #x1 {
+                margin: 20px 20px 50px 20px;
+                width: 220px;
+                height: 8px;
+                position: relative;
+            }
+
+            #x2 {
+                margin: 20px 20px 50px 20px;
+                width: 220px;
+                height: 8px;
+                position: relative;
+            }
+
+            #x3 {
+                margin: 20px 20px 50px 20px;
+                width: 220px;
+                height: 8px;
+                position: relative;
+            }
+        }
+
+        .row2 {
+            padding: 30px 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .button {
+
+                border: 1px solid $text-color-second;
+                padding: 10px 20px;
+                margin: 10px;
+                text-decoration: none;
+                color: $text-color;
+                border-radius: 4px;
+            }
+        }
+    }
+
+}

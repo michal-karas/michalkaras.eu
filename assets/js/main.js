@@ -180,11 +180,11 @@ var bar = new ProgressBar.Line(x1, {
     from: { color: '#FFEA82' },
     to: { color: '#ED6A5A' },
     step: (state, bar) => {
-        bar.setText(Math.round(bar.value() * 100) + ' % x1');
+        bar.setText(Math.round(bar.value() * 100) + ' % React');
     }
 });
 
-bar.animate(0.7);
+bar.animate(0.2);
 
 
 
@@ -211,11 +211,11 @@ var bar = new ProgressBar.Line(x2, {
     from: { color: '#FFEA82' },
     to: { color: '#ED6A5A' },
     step: (state, bar) => {
-        bar.setText(Math.round(bar.value() * 100) + ' % x2');
+        bar.setText(Math.round(bar.value() * 100) + ' % Django');
     }
 });
 
-bar.animate(0.6);
+bar.animate(0.1);
 
 
 
@@ -242,10 +242,10 @@ var bar = new ProgressBar.Line(x3, {
     from: { color: '#FFEA82' },
     to: { color: '#ED6A5A' },
     step: (state, bar) => {
-        bar.setText(Math.round(bar.value() * 100) + ' % x3');
+        bar.setText(Math.round(bar.value() * 100) + ' % PS');
     }
 });
 
-bar.animate(0.2);
+bar.animate(0.8);
 
 

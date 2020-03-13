@@ -118,6 +118,25 @@
                 border-radius: 4px;
             }
         }
+
+        .git {
+            text-align: center;
+            border: 1px solid $text-color-second;
+            border-radius: 4px;
+            margin: 10px;
+            color: $text-color;
+            font-size: 20px;
+            @include fluid-type (320px, 1170px, 12px, 18px);
+            text-decoration: none;
+
+            img {
+                margin: 10px;
+                width: 50px;
+                height: auto;
+                vertical-align: middle;
+            }
+
+        }
     }
 
 }

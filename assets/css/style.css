@@ -511,6 +511,22 @@ body .main-bar .container .logo img.logo-black {
   display: none;
 }
 
+body .main-bar .container .arrow-top {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: #414141;
+  color: azure;
+  font-size: 20px;
+  text-align: center;
+  line-height: 30px;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  z-index: 2;
+}
+
 body.menu-open .main-bar .hamburger {
   border-color: #000000;
 }
@@ -666,7 +682,23 @@ body.menu-open .main-bar .links li a {
   color: #414141;
   text-align: justify;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 20px;
+}
+
+.about .container .box p {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .about .container .box p {
+    font-size: calc(12px + 8 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .about .container .box p {
+    font-size: 20px;
+  }
 }
 
 .top {
@@ -959,6 +991,39 @@ body.menu-open .main-bar .links li a {
   border-radius: 4px;
 }
 
+.my-skills .container .git {
+  text-align: center;
+  border: 1px solid #777777;
+  border-radius: 4px;
+  margin: 10px;
+  color: #414141;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.my-skills .container .git {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .my-skills .container .git {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .my-skills .container .git {
+    font-size: 18px;
+  }
+}
+
+.my-skills .container .git img {
+  margin: 10px;
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
 .myexp {
   padding: 75px 0;
   background-color: #ffffff;
@@ -993,7 +1058,6 @@ body.menu-open .main-bar .links li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -1008,15 +1072,11 @@ body.menu-open .main-bar .links li a {
 }
 
 .myexp .container .box .time {
-  padding: 75px 0 0 0;
-  display: block;
-  top: 0;
-  left: 0;
+  padding: 30px 0 0 0;
   color: #414141;
   text-align: justify;
   line-height: 1.5;
-  font-size: 20px;
-  text-transform: capitalize;
+  font-size: 18px;
   font-weight: 700;
 }
 
@@ -1026,26 +1086,23 @@ body.menu-open .main-bar .links li a {
 
 @media screen and (min-width: 320px) {
   .myexp .container .box .time {
-    font-size: calc(12px + 8 * ((100vw - 320px) / 850));
+    font-size: calc(12px + 6 * ((100vw - 320px) / 850));
   }
 }
 
 @media screen and (min-width: 1170px) {
   .myexp .container .box .time {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .myexp .container .box .data {
-  padding: 75px 0 75px 40px;
-  display: block;
-  top: 0;
-  left: 0;
+  width: 70%;
+  padding: 30px 0 10px 40px;
   color: #414141;
   text-align: justify;
   line-height: 1.5;
-  font-size: 20px;
-  text-transform: capitalize;
+  font-size: 18px;
 }
 
 .myexp .container .box .data {
@@ -1054,23 +1111,19 @@ body.menu-open .main-bar .links li a {
 
 @media screen and (min-width: 320px) {
   .myexp .container .box .data {
-    font-size: calc(12px + 8 * ((100vw - 320px) / 850));
+    font-size: calc(12px + 6 * ((100vw - 320px) / 850));
   }
 }
 
 @media screen and (min-width: 1170px) {
   .myexp .container .box .data {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
 .portfolio {
   padding: 75px 0 30px 0;
   background-color: #f6f6f6;
-}
-
-.portfolio .container {
-  padding: 75px 0;
 }
 
 .portfolio .container h2 {
@@ -1203,12 +1256,23 @@ body.menu-open .main-bar .links li a {
 }
 
 .contact {
-  padding: 75px 0 0 0;
+  padding: 75px 0 30px 0;
   background-color: #ffffff;
 }
 
-.contact .container h2 {
-  text-align: center;
+.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.contact .container .title {
+  width: 45%;
+}
+
+.contact .container .title h2 {
+  text-align: left;
   color: #414141;
   font-size: 40px;
   font-weight: 700;
@@ -1216,26 +1280,58 @@ body.menu-open .main-bar .links li a {
   line-height: 0.8;
 }
 
-.contact .container h2 {
+.contact .container .title h2 {
   font-size: 20px;
 }
 
 @media screen and (min-width: 320px) {
-  .contact .container h2 {
+  .contact .container .title h2 {
     font-size: calc(20px + 20 * ((100vw - 320px) / 850));
   }
 }
 
 @media screen and (min-width: 1170px) {
-  .contact .container h2 {
+  .contact .container .title h2 {
     font-size: 40px;
   }
 }
 
-.contact .container .contact-description {
-  width: 75%;
-  margin: 0 auto 40px auto;
-  text-align: center;
+.contact .container .title .contact-description {
+  text-align: left;
+}
+
+.contact .container .title .contact-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact .container .title .contact-box .media img {
+  width: 50px;
+  height: auto;
+  vertical-align: middle;
+}
+
+.contact .container .title .contact-box .media .footer-text {
+  margin: 20px 0 0 0;
+  color: #414141;
+  font-size: 20px;
+}
+
+.contact .container .title .contact-box .media .footer-text {
+  font-size: 12px;
+}
+
+@media screen and (min-width: 320px) {
+  .contact .container .title .contact-box .media .footer-text {
+    font-size: calc(12px + 6 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .contact .container .title .contact-box .media .footer-text {
+    font-size: 18px;
+  }
 }
 
 .contact .container .logo {
@@ -1243,21 +1339,17 @@ body.menu-open .main-bar .links li a {
   font-size: 30px;
 }
 
-.contact .container form {
-  width: 60%;
-  margin: 75px auto;
+.contact .container .form {
+  width: 50%;
+  padding: 75px 0 0 30px;
 }
 
-.contact .container form .row {
-  margin: 0 0 15px 0;
-}
-
-.contact .container form .row.send {
+.contact .container .form .row.send {
   text-align: center;
   margin: 30px 0 0 0;
 }
 
-.contact .container form .row.send button {
+.contact .container .form .row.send button {
   position: relative;
   padding: 20px 40px;
   background-color: #ffffff;
@@ -1268,14 +1360,14 @@ body.menu-open .main-bar .links li a {
   border: 0;
 }
 
-.contact .container form .row.send button span {
+.contact .container .form .row.send button span {
   position: relative;
   z-index: 2;
   -webkit-transition: 1s all;
   transition: 1s all;
 }
 
-.contact .container form .row.send button:after {
+.contact .container .form .row.send button:after {
   position: absolute;
   display: block;
   content: "";
@@ -1288,7 +1380,7 @@ body.menu-open .main-bar .links li a {
   transition: 1s all;
 }
 
-.contact .container form .row.send button:before {
+.contact .container .form .row.send button:before {
   position: absolute;
   display: block;
   content: "";
@@ -1301,19 +1393,19 @@ body.menu-open .main-bar .links li a {
   transition: 1s all;
 }
 
-.contact .container form .row.send button:hover span {
+.contact .container .form .row.send button:hover span {
   color: #000000;
 }
 
-.contact .container form .row label {
+.contact .container .form .row label {
   display: block;
   margin: 0 0 5px 0;
   font-weight: 300;
 }
 
-.contact .container form .row input[type="text"],
-.contact .container form .row input[type="password"],
-.contact .container form .row input[type="email"] {
+.contact .container .form .row input[type="text"],
+.contact .container .form .row input[type="password"],
+.contact .container .form .row input[type="email"] {
   border: none;
   border-bottom: 1px solid #414141;
   padding: 15px;
@@ -1322,7 +1414,7 @@ body.menu-open .main-bar .links li a {
   outline: none;
 }
 
-.contact .container form .row textarea {
+.contact .container .form .row textarea {
   border: none;
   border-bottom: 1px solid #414141;
   padding: 15px;
@@ -1332,7 +1424,7 @@ body.menu-open .main-bar .links li a {
   outline: none;
 }
 
-.contact .container form .row select {
+.contact .container .form .row select {
   border: none;
   border-bottom: 1px solid #414141;
   padding: 15px;
@@ -1341,7 +1433,7 @@ body.menu-open .main-bar .links li a {
   outline: none;
 }
 
-.contact .container form .row select label {
+.contact .container .form .row select label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1352,7 +1444,7 @@ body.menu-open .main-bar .links li a {
   margin: 0 0 10px 0;
 }
 
-.contact .container form .row select label span {
+.contact .container .form .row select label span {
   display: inline-block;
   width: 32px;
   height: 32px;

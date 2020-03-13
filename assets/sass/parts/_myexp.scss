@@ -5,6 +5,7 @@
 
     .container {
 
+
         h2 {
             text-align: center;
             color: $text-color;
@@ -17,8 +18,8 @@
 
         .box {
             display: flex;
-            width: 100%;
             justify-content: center;
+
 
             @media (max-width: 750px) {
                 width: 100%;
@@ -27,33 +28,28 @@
             }
 
             .time {
-                padding: 75px 0 0 0;
-                display: block;
-                top: 0;
-                left: 0;
+                padding: 30px 0 0 0;
                 color: $text-color;
                 text-align: justify;
                 line-height: 1.5;
-                font-size: 20px;
-                text-transform: capitalize;
+                font-size: 18px;
                 font-weight: 700;
-                @include fluid-type (320px, 1170px, 12px, 20px);
+                @include fluid-type (320px, 1170px, 12px, 18px);
 
             }
 
             .data {
-                padding: 75px 0 75px 40px;
-                display: block;
-                top: 0;
-                left: 0;
+                width: 70%;
+                padding: 30px 0 10px 40px;
                 color: $text-color;
                 text-align: justify;
                 line-height: 1.5;
-                font-size: 20px;
-                text-transform: capitalize;
-                @include fluid-type (320px, 1170px, 12px, 20px);
+                font-size: 18px;
+                @include fluid-type (320px, 1170px, 12px, 18px);
 
             }
         }
+
+
     }
 }

@@ -131,6 +131,21 @@ body {
                 }
             }
 
+            .arrow-top {
+                display: block;
+                width: 40px;
+                height: 40px;
+                border-radius: 4px;
+                background-color: $button-color;
+                color: azure;
+                font-size: 20px;
+                text-align: center;
+                line-height: 30px;
+                position: fixed;
+                bottom: 40px;
+                right: 40px;
+                z-index: 2;
+            }
 
         }
     }

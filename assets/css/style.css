@@ -641,6 +641,33 @@ body.menu-open .main-bar .links li a {
   }
 }
 
+.about .container h3 {
+  text-align: center;
+  padding: 30px 0;
+  color: #dfdede;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 0.8;
+  font-style: italic;
+  letter-spacing: 3px;
+}
+
+.about .container h3 {
+  font-size: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .about .container h3 {
+    font-size: calc(16px + 4 * ((100vw - 320px) / 850));
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .about .container h3 {
+    font-size: 20px;
+  }
+}
+
 .about .container h2 {
   text-align: center;
   padding: 30px 0;
@@ -770,7 +797,6 @@ body.menu-open .main-bar .links li a {
   .top .container .left {
     width: 100%;
     text-align: center;
-    margin: 0 0 20px 0;
   }
 }
 
@@ -784,12 +810,12 @@ body.menu-open .main-bar .links li a {
 }
 
 .top .container .left h2 {
-  font-size: 20px;
+  font-size: 12px;
 }
 
 @media screen and (min-width: 320px) {
   .top .container .left h2 {
-    font-size: calc(20px + 20 * ((100vw - 320px) / 850));
+    font-size: calc(12px + 28 * ((100vw - 320px) / 850));
   }
 }
 
@@ -822,17 +848,24 @@ body.menu-open .main-bar .links li a {
 .top .container .right {
   text-align: right;
   width: 45%;
-  padding: 100px 50px 0 0;
+  padding: 150px 10px 0 0;
 }
 
 @media (max-width: 750px) {
   .top .container .right {
     width: 100%;
+    padding: 90px 0 0 0;
   }
 }
 
 .top .container .right img {
-  width: 65%;
+  width: 80%;
+}
+
+@media (max-width: 750px) {
+  .top .container .right img {
+    width: 100%;
+  }
 }
 
 .my-skills {
@@ -992,33 +1025,51 @@ body.menu-open .main-bar .links li a {
 }
 
 .my-skills .container .git {
-  text-align: center;
+  padding: 75px 0 40px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.my-skills .container .git a {
+  margin: 0 auto;
+  display: inline-block;
+  overflow: hidden;
+  padding: 0 30px;
   border: 1px solid #777777;
   border-radius: 4px;
-  margin: 10px;
   color: #414141;
   font-size: 20px;
   text-decoration: none;
 }
 
-.my-skills .container .git {
+.my-skills .container .git a {
   font-size: 12px;
 }
 
 @media screen and (min-width: 320px) {
-  .my-skills .container .git {
+  .my-skills .container .git a {
     font-size: calc(12px + 6 * ((100vw - 320px) / 850));
   }
 }
 
 @media screen and (min-width: 1170px) {
-  .my-skills .container .git {
+  .my-skills .container .git a {
     font-size: 18px;
   }
 }
 
 .my-skills .container .git img {
-  margin: 10px;
   width: 50px;
   height: auto;
   vertical-align: middle;

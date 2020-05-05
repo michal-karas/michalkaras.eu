@@ -8,6 +8,18 @@
 
     .container {
 
+        h3 {
+            text-align: center;
+            padding: 30px 0;
+            color: #dfdede;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 0.8;
+            @include fluid-type (320px, 1170px, 16px, 20px);
+            font-style: italic;
+            letter-spacing: 3px;
+        }
+
         h2 {
             text-align: center;
             padding: 30px 0;
@@ -16,6 +28,7 @@
             font-weight: 700;
             line-height: 0.8;
             @include fluid-type (320px, 1170px, 20px, 40px);
+
         }
 
         .box {
@@ -29,7 +42,6 @@
 
 
             p {
-
                 padding: 30px 0;
                 display: block;
                 top: 0;
@@ -39,7 +51,10 @@
                 line-height: 1.5;
                 font-size: 20px;
                 @include fluid-type (320px, 1170px, 12px, 20px);
+
+ 
             }
         }
+        
     }
 }
